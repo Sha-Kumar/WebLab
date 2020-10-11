@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="http://mite.ac.in/sites/default/files/favicon_0.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Welcome to MITE </title>
 
     <style>
@@ -24,13 +25,9 @@
             font-size: 160%;
         }
 
-        .marg{
-            margin-left: 25%;
+        .marg {
+            margin-left: 17%;
         }
-        
-        /* a:link {
-            text-decoration: none;
-        } */
 
         .topnav {
             background-color: rgb(219, 117, 0);
@@ -38,12 +35,6 @@
             height: 25px;
         }
 
-        .menu {
-            background-color: white;
-            overflow: hidden;
-            height: 25px;
-        }
-        /* Style the links inside the navigation bar */
         .topnav a {
             float: left;
             top: 0%;
@@ -57,8 +48,6 @@
 
         /* Change the color of links on hover */
         .topnav a:hover {
-            /* background-color:#f2f2f2; */
-            
             color: black;
         }
 
@@ -67,6 +56,100 @@
             background-color: #4CAF50;
             color: white;
         }
+
+        .menu {
+            background-color: white;
+            overflow: hidden;
+            height: 110px;
+        }
+
+        .menuimg {
+            float: left;
+            padding-top: 8px;
+        }
+
+        .menu a {
+            float: left;
+            top: 0%;
+            color: black;
+            text-align: center;
+            font-weight: 200;
+            padding: 40px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu a:hover {
+            color: rgb(219, 117, 0);
+        }
+
+        .menu a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .firstmenu {
+            margin-left: 5%;
+        }
+
+        .menuimg2 {
+            margin-left: 5%;
+            height: 65px;
+            padding-top: 15px;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-family: Courier;
+            border: none;
+            outline: none;
+            color: black;
+            background-color: inherit;
+            text-align: center;
+            font-weight: 200;
+            padding: 40px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: none;
+            color: rgb(219, 117, 0);
+        }
+
+        .dropdown-content {
+            z-index: 1; 
+            display: none;
+            position: absolute;
+            background-color: rgb(56, 54, 54);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
 </head>
 
@@ -74,26 +157,66 @@
 
 
     <div class="topnav">
-    <div class="marg">
-        <a href="http://mite.ac.in/nirf-data" title="">NIRF</a>
+        <div class="marg">
+            <a href="http://mite.ac.in/nirf-data" title="">NIRF</a>
             <a href="http://mite.ac.in/testimony" title="">Testimonials</a>
             <a href="http://mite.ac.in/alumni" title="">Alumni</a>
             <a href="http://mite.ac.in/naac" title="">NAAC</a>
             <a href="http://mite.ac.in/sentia/" title="">Sentia</a>
             <a href="http://mite.ac.in/bharat" title="">EBSB</a>
-        </div>  
+        </div>
     </div>
 
     <div class="menu">
         <div class="marg">
-            <a href="http://mite.ac.in/nirf-data" title="">HOME</a>
-                <a href="http://mite.ac.in/testimony" title="">ABOUT</a>
-                <a href="http://mite.ac.in/alumni" title="">PROGRAMS</a>
-                <a href="http://mite.ac.in/naac" title="">PARTNERSHIP</a>
-                <a href="http://mite.ac.in/sentia/" title="">CAMPUSLIFE</a>
-                <a href="http://mite.ac.in/bharat" title="">CONTACT</a>
-            </div>  
+            <img src="http://mite.ac.in/sites/default/files/logo1.png" alt="" class="menuimg" />
+            <a href="http://mite.ac.in/" class="firstmenu" title="">HOME</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    ABOUT
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    PROGRAMS
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    PARTNERSHIP
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    CAMPUSLIFE
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <a href="http://mite.ac.in/" title="">CONTACT</a>
+
+            <img src="http://mite.ac.in/sites/all/themes/hotec/images/logo2.png" class="menuimg2" />
         </div>
+    </div>
 
     <img src="college.png" alt="Girl in a jacket" width="100%" height="500">
 
