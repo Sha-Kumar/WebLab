@@ -138,10 +138,6 @@
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         }
 
-        /* .dropdown .prgbox {
-            
-        } */
-
         .dropdown-content a {
             float: none;
             color: gray;
@@ -154,8 +150,18 @@
             margin-bottom: 2px;
         }
 
+        .dropdown-content p {
+            float: none;
+            color: crimson;
+            padding: 5px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            margin-top: 0px;
+            margin-bottom: 2px;
+        }
+
         .dropdown-content a:hover {
-            /* background-color: white; */
             color: rgb(255, 255, 255);
         }
 
@@ -168,13 +174,10 @@
             margin-left: 15px;
             margin-right: 15px;
         }
-
     </style>
 </head>
 
 <body>
-
-
     <div class="topnav">
         <div class="marg">
             <a href="http://mite.ac.in/nirf-data" title="">NIRF</a>
@@ -202,8 +205,6 @@
                     <hr>
                     <a href="http://mite.ac.in/principal">PRINCIPAL</a>
                     <hr>
-                    <a href="#">DEPARTMENT<span style='font-size:12px; float: right; color: white; '>&#9654;</span></a>
-                    <hr>
                     <a href="http://mite.ac.in/jobs">JOBS</a>
                     <hr>
                     <a href="http://mite.ac.in/research/physics">RESEARCH</a>
@@ -215,15 +216,51 @@
             </div>
             <div class="dropdown">
                 <button class="dropbtn">
-                    PROGRAMS <i class="fa fa-caret-down"></i>
+                    DEPARTMENT <i class="fa fa-caret-down"></i>
                 </button>
-                <div class="progbox">
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                    
+                <div class="dropdown-content" style="max-width: 400px;">
+                    <a href="http://mite.ac.in/be/cse">COMPUTER SCIENCE & ENGG</a>
+                    <hr>
+                    <a href='http://mite.ac.in/be/ise'>INFORMATION SCIENCE & ENGG</a>
+                    <hr>
+                    <a href="http://mite.ac.in/be/ece">ELECTRONICS & COMMUNICATION ENGG</a>
+                    <hr>
+                    <a href="http://mite.ac.in/be/mech">MECHANICAL ENGG</a>
+                    <hr>
+                    <a href="http://mite.ac.in/be/mechat">MECHATRONICS ENGG</a>
+                    <hr>
+                    <a href="http://mite.ac.in/be/civil">CIVIL ENGG</a>
+                    <hr>
+                    <a href="http://mite.ac.in/be/aero">AERONAUTICAL ENGG</a>
+                    <hr>
+                    <a href="http://mite.ac.in/departments/basic-science-humanities">BASIC SCIENCE AND HUMANITIES</a>
+                    <hr>
+                    <a href="http://mite.ac.in/department/esdp">ESDP CELL</a>
+                    <hr>
+                    <a href="http://mite.ac.in/departments/mba">MBA</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    COURSES <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" style="max-width: 400px;">
+                    <p style="font-size: 15px;">M-TECH COURSES</p>
+                    <a href="http://mite.ac.in/mba">MBA</a>
+                    <hr>
+                    <p style="font-size: 15px;">PG COURSES</p>
+                    <a href="http://mite.ac.in/mtech/cse">COMPUTER SCIENCE</a>
+                    <hr>
+                    <a href="http://mite.ac.in/mtech/mecht">MECHATRONICS</a>
+                    <hr>
+                    <p style="font-size: 15px;">PH-D</p>
+                    <a href="http://mite.ac.in/physics">PHYSICS</a>
+                    <hr>
+                    <a href="http://mite.ac.in/chemistry">CHEMISTRY</a>
+                    <hr>
+                    <a href="http://mite.ac.in/mechanical">MECHANICAL</a>
+                    <hr>
+                    <a href="http://mite.ac.in/computer-science">COMPUTER SCIENCE</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -247,7 +284,7 @@
                     <a href="http://mite.ac.in/nain-incubation-center">NAIN - INCUBATION CENTRE</a>
                 </div>
             </div>
-            <div class="dropdown">
+            <div class="dropdown" style="max-width: 400px;">
                 <button class="dropbtn">
                     CAMPUSLIFE <i class="fa fa-caret-down"></i>
                 </button>
@@ -256,7 +293,16 @@
                     <hr>
                     <a href="http://mite.ac.in/virtualtour/">VIRTUAL TOUR</a>
                     <hr>
-                    <a href="#">FACILITIES<span style='font-size:12px; float: right; color: white; '>&#9654;</span></a>
+                    <!-- <span style='font-size:12px; float: right; color: white; '>&#9654;</span> -->
+                    <p style="font-size: 16px;">FACILITIES</p>
+                    <div><a href="http://mite.ac.in/transport"
+                            style="display: inline;font-size: 14px;">TRANSPORT</a><br><br>
+                        <a href="http://mite.ac.in/learning-rooms" style="display: inline;font-size: 14px;">LEARNING
+                            ROOMS</a><br><br>
+                        <a href="http://mite.ac.in/hostel" style="display: inline;font-size: 14px;">HOSTEL</a><a
+                            href="http://mite.ac.in/leisure"
+                            style="display: inline;font-size: 14px;right: 1px;">LEISURE</a>
+                    </div>
                     <hr>
                     <a href="http://mite.ac.in/sports">SPORTS</a>
                     <hr>
