@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="http://mite.ac.in/sites/default/files/favicon_0.png" type="image/png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Welcome to MITE </title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="http://mite.ac.in/sites/default/files/favicon_0.png" type="image/png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Welcome to MITE </title>
 
-    <style>
-        body {
-            background-color: white;
+        <style>
+body {
+    background-color: white;
+}
+
+        .div1 {
+            height: 300px;
+            background-color:#1c4e9b;
         }
-
+        .div2 {
+            height: 100px;
+            background-color: #183a6f;
+        }
+        .block-title{
+            color: whitesmoke;
+            font-size: medium;
+            padding-left: 60px;
+            padding-top: 45px;
+        }
         h1 {
             color: blue;
             font-family: verdana;
@@ -138,6 +152,10 @@
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         }
 
+        /* .dropdown .prgbox {
+
+        } */
+
         .dropdown-content a {
             float: none;
             color: gray;
@@ -174,159 +192,260 @@
             margin-left: 15px;
             margin-right: 15px;
         }
-    </style>
-</head>
+        </style>
+    </head>
 
-<body>
-    <div class="topnav">
-        <div class="marg">
-            <a href="http://mite.ac.in/nirf-data" title="">NIRF</a>
-            <a href="http://mite.ac.in/testimony" title="">Testimonials</a>
-            <a href="http://mite.ac.in/alumni" title="">Alumni</a>
-            <a href="http://mite.ac.in/naac" title="">NAAC</a>
-            <a href="http://mite.ac.in/sentia/" title="">Sentia</a>
-            <a href="http://mite.ac.in/bharat" title="">EBSB</a>
+    <body>
+
+
+        <div class="topnav">
+            <div class="marg">
+                <a href="http://mite.ac.in/nirf-data" title="">NIRF</a>
+                <a href="http://mite.ac.in/testimony" title="">Testimonials</a>
+                <a href="http://mite.ac.in/alumni" title="">Alumni</a>
+                <a href="http://mite.ac.in/naac" title="">NAAC</a>
+                <a href="http://mite.ac.in/sentia/" title="">Sentia</a>
+                <a href="http://mite.ac.in/bharat" title="">EBSB</a>
+            </div>
         </div>
-    </div>
 
-    <div class="menu">
-        <div class="marg">
-            <img src="http://mite.ac.in/sites/default/files/logo1.png" alt="" class="menuimg" />
-            <a href="http://mite.ac.in/" class="firstmenu" title="">HOME</a>
+        <div class="menu">
+            <div class="marg">
+                <img src="http://mite.ac.in/sites/default/files/logo1.png" alt="" class="menuimg" />
+                <a href="http://mite.ac.in/" class="firstmenu" title="">HOME</a>
 
-            <div class="dropdown">
-                <button class="dropbtn">
-                    ABOUT <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="http://mite.ac.in/about">ABOUT MITE</a>
-                    <hr>
-                    <a href='http://mite.ac.in/management'>MANAGEMENT</a>
-                    <hr>
-                    <a href="http://mite.ac.in/principal">PRINCIPAL</a>
-                    <hr>
-                    <a href="http://mite.ac.in/jobs">JOBS</a>
-                    <hr>
-                    <a href="http://mite.ac.in/research/physics">RESEARCH</a>
-                    <hr>
-                    <a href="http://mite.ac.in/perspective-plan">PERSPECTIVE PLAN</a>
-                    <hr>
-                    <a href="http://mite.ac.in/administrative-committes">ADMINISTRATIVE COMMITS</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    DEPARTMENT <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" style="max-width: 400px;">
-                    <a href="http://mite.ac.in/be/cse">COMPUTER SCIENCE & ENGG</a>
-                    <hr>
-                    <a href='http://mite.ac.in/be/ise'>INFORMATION SCIENCE & ENGG</a>
-                    <hr>
-                    <a href="http://mite.ac.in/be/ece">ELECTRONICS & COMMUNICATION ENGG</a>
-                    <hr>
-                    <a href="http://mite.ac.in/be/mech">MECHANICAL ENGG</a>
-                    <hr>
-                    <a href="http://mite.ac.in/be/mechat">MECHATRONICS ENGG</a>
-                    <hr>
-                    <a href="http://mite.ac.in/be/civil">CIVIL ENGG</a>
-                    <hr>
-                    <a href="http://mite.ac.in/be/aero">AERONAUTICAL ENGG</a>
-                    <hr>
-                    <a href="http://mite.ac.in/departments/basic-science-humanities">BASIC SCIENCE AND HUMANITIES</a>
-                    <hr>
-                    <a href="http://mite.ac.in/department/esdp">ESDP CELL</a>
-                    <hr>
-                    <a href="http://mite.ac.in/departments/mba">MBA</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    COURSES <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" style="max-width: 400px;">
-                    <p style="font-size: 15px;">M-TECH COURSES</p>
-                    <a href="http://mite.ac.in/mba">MBA</a>
-                    <hr>
-                    <p style="font-size: 15px;">PG COURSES</p>
-                    <a href="http://mite.ac.in/mtech/cse">COMPUTER SCIENCE</a>
-                    <hr>
-                    <a href="http://mite.ac.in/mtech/mecht">MECHATRONICS</a>
-                    <hr>
-                    <p style="font-size: 15px;">PH-D</p>
-                    <a href="http://mite.ac.in/physics">PHYSICS</a>
-                    <hr>
-                    <a href="http://mite.ac.in/chemistry">CHEMISTRY</a>
-                    <hr>
-                    <a href="http://mite.ac.in/mechanical">MECHANICAL</a>
-                    <hr>
-                    <a href="http://mite.ac.in/computer-science">COMPUTER SCIENCE</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    PARTNERSHIP <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="http://mite.ac.in/coc">BOSCH REXROTH CENTRE OF COMPETENCE</a>
-                    <hr>
-                    <a href="http://mite.ac.in/siemenscoe">SIEMENS CENTRE OF EXCELLENCE</a>
-                    <hr>
-                    <a href="http://mite.ac.in/infosys-campus-connect">INFOSYS CAMPUS CONNECT</a>
-                    <hr>
-                    <a href="http://mite.ac.in/nano-science-technology-research-centre">NANO SCIENCE & TECHNOLOGY AND
-                        RESEARCH CENTRE</a>
-                    <hr>
-                    <a href="http://mite.ac.in/civil-cits-center">CIVIL - CITS CENTRE</a>
-                    <hr>
-                    <a href="http://mite.ac.in/global-student-exchange">GLOBAL STUDENT EXCHANGE</a>
-                    <hr>
-                    <a href="http://mite.ac.in/nain-incubation-center">NAIN - INCUBATION CENTRE</a>
-                </div>
-            </div>
-            <div class="dropdown" style="max-width: 400px;">
-                <button class="dropbtn">
-                    CAMPUSLIFE <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="http://mite.ac.in/library">LIBRARY</a>
-                    <hr>
-                    <a href="http://mite.ac.in/virtualtour/">VIRTUAL TOUR</a>
-                    <hr>
-                    <!-- <span style='font-size:12px; float: right; color: white; '>&#9654;</span> -->
-                    <p style="font-size: 16px;">FACILITIES</p>
-                    <div><a href="http://mite.ac.in/transport"
-                            style="display: inline;font-size: 14px;">TRANSPORT</a><br><br>
-                        <a href="http://mite.ac.in/learning-rooms" style="display: inline;font-size: 14px;">LEARNING
-                            ROOMS</a><br><br>
-                        <a href="http://mite.ac.in/hostel" style="display: inline;font-size: 14px;">HOSTEL</a><a
-                            href="http://mite.ac.in/leisure"
-                            style="display: inline;font-size: 14px;right: 1px;">LEISURE</a>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        ABOUT <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="http://mite.ac.in/about">ABOUT MITE</a>
+                        <hr>
+                        <a href='http://mite.ac.in/management'>MANAGEMENT</a>
+                        <hr>
+                        <a href="http://mite.ac.in/principal">PRINCIPAL</a>
+                        <hr>
+                        <a href="#">DEPARTMENT<span style='font-size:12px; float: right; color: white; '>&#9654;</span></a>
+                        <hr>
+                        <a href="http://mite.ac.in/jobs">JOBS</a>
+                        <hr>
+                        <a href="http://mite.ac.in/research/physics">RESEARCH</a>
+                        <hr>
+                        <a href="http://mite.ac.in/perspective-plan">PERSPECTIVE PLAN</a>
+                        <hr>
+                        <a href="http://mite.ac.in/administrative-committes">ADMINISTRATIVE COMMITS</a>
                     </div>
-                    <hr>
-                    <a href="http://mite.ac.in/sports">SPORTS</a>
-                    <hr>
-                    <a href="http://mite.ac.in/placements">PLACEMENTS</a>
-                    <hr>
-                    <a href="http://mite.ac.in/industry-academia-innovation-practices">INDUSTRY - ACADEMIA INNOVATION
-                        PRACTICES</a>
-                    <hr>
-                    <a href="http://mite.ac.in/iqac">IQAC</a>
-                    <hr>
-                    <a href="http://mite.ac.in/ipr-cell">IPR CELL</a>
-                    <hr>
-                    <a href="http://mite.ac.in/career-guidance-cell">CARREAR GUIDANCE CELL</a>
-                </div>
+                    </style>
+                    </head>
 
-            </div>
-            <a href="http://mite.ac.in/" title="">CONTACT</a>
+                    <body>
+                        <div class="topnav">
+                            <div class="marg">
+                                <a href="http://mite.ac.in/nirf-data" title="">NIRF</a>
+                                <a href="http://mite.ac.in/testimony" title="">Testimonials</a>
+                                <a href="http://mite.ac.in/alumni" title="">Alumni</a>
+                                <a href="http://mite.ac.in/naac" title="">NAAC</a>
+                                <a href="http://mite.ac.in/sentia/" title="">Sentia</a>
+                                <a href="http://mite.ac.in/bharat" title="">EBSB</a>
+                            </div>
+                        </div>
 
-            <img src="http://mite.ac.in/sites/all/themes/hotec/images/logo2.png" class="menuimg2" />
-        </div>
-    </div>
+                        <div class="menu">
+                            <div class="marg">
+                                <img src="http://mite.ac.in/sites/default/files/logo1.png" alt="" class="menuimg" />
+                                <a href="http://mite.ac.in/" class="firstmenu" title="">HOME</a>
 
-    <img src="college.png" alt="Girl in a jacket" width="100%" height="500">
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+                                        ABOUT <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="http://mite.ac.in/about">ABOUT MITE</a>
+                                        <hr>
+                                        <a href='http://mite.ac.in/management'>MANAGEMENT</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/principal">PRINCIPAL</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/jobs">JOBS</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/research/physics">RESEARCH</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/perspective-plan">PERSPECTIVE PLAN</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/administrative-committes">ADMINISTRATIVE COMMITS</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+                                        DEPARTMENT <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content" style="max-width: 400px;">
+                                        <a href="http://mite.ac.in/be/cse">COMPUTER SCIENCE & ENGG</a>
+                                        <hr>
+                                        <a href='http://mite.ac.in/be/ise'>INFORMATION SCIENCE & ENGG</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/be/ece">ELECTRONICS & COMMUNICATION ENGG</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/be/mech">MECHANICAL ENGG</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/be/mechat">MECHATRONICS ENGG</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/be/civil">CIVIL ENGG</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/be/aero">AERONAUTICAL ENGG</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/departments/basic-science-humanities">BASIC SCIENCE AND HUMANITIES</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/department/esdp">ESDP CELL</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/departments/mba">MBA</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+                                        COURSES <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content" style="max-width: 400px;">
+                                        <p style="font-size: 15px;">M-TECH COURSES</p>
+                                        <a href="http://mite.ac.in/mba">MBA</a>
+                                        <hr>
+                                        <p style="font-size: 15px;">PG COURSES</p>
+                                        <a href="http://mite.ac.in/mtech/cse">COMPUTER SCIENCE</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/mtech/mecht">MECHATRONICS</a>
+                                        <hr>
+                                        <p style="font-size: 15px;">PH-D</p>
+                                        <a href="http://mite.ac.in/physics">PHYSICS</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/chemistry">CHEMISTRY</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/mechanical">MECHANICAL</a>
+                                        <hr>
+                                        <a href="http://mite.ac.in/computer-science">COMPUTER SCIENCE</a>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">
+                                            PROGRAMS <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="progbox">
+                                            <div class="dropdown-content">
+                                                <a href="#">Link 1</a>
+                                                <a href="#">Link 2</a>
+                                                <a href="#">Link 3</a>
+                                            </div>
 
-</body>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">
+                                            PARTNERSHIP <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="http://mite.ac.in/coc">BOSCH REXROTH CENTRE OF COMPETENCE</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/siemenscoe">SIEMENS CENTRE OF EXCELLENCE</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/infosys-campus-connect">INFOSYS CAMPUS CONNECT</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/nano-science-technology-research-centre">NANO SCIENCE & TECHNOLOGY AND
+                                                RESEARCH CENTRE</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/civil-cits-center">CIVIL - CITS CENTRE</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/global-student-exchange">GLOBAL STUDENT EXCHANGE</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/nain-incubation-center">NAIN - INCUBATION CENTRE</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">
+                                            CAMPUSLIFE <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="http://mite.ac.in/library">LIBRARY</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/virtualtour/">VIRTUAL TOUR</a>
+                                            <hr>
+                                            <a href="#">FACILITIES<span style='font-size:12px; float: right; color: white; '>&#9654;</span></a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/sports">SPORTS</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/placements">PLACEMENTS</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/industry-academia-innovation-practices">INDUSTRY - ACADEMIA INNOVATION
+                                                PRACTICES</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/iqac">IQAC</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/ipr-cell">IPR CELL</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/career-guidance-cell">CARREAR GUIDANCE CELL</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="dropdown" style="max-width: 400px;">
+                                        <button class="dropbtn">
+                                            CAMPUSLIFE <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="http://mite.ac.in/library">LIBRARY</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/virtualtour/">VIRTUAL TOUR</a>
+                                            <hr>
+                                            <!-- <span style='font-size:12px; float: right; color: white; '>&#9654;</span> -->
+                                            <p style="font-size: 16px;">FACILITIES</p>
+                                            <div><a href="http://mite.ac.in/transport"
+                                                    style="display: inline;font-size: 14px;">TRANSPORT</a><br><br>
+                                                <a href="http://mite.ac.in/learning-rooms" style="display: inline;font-size: 14px;">LEARNING
+                                                    ROOMS</a><br><br>
+                                                <a href="http://mite.ac.in/hostel" style="display: inline;font-size: 14px;">HOSTEL</a><a
+                                                    href="http://mite.ac.in/leisure"
+                                                    style="display: inline;font-size: 14px;right: 1px;">LEISURE</a>
+                                            </div>
+                                            <hr>
+                                            <a href="http://mite.ac.in/sports">SPORTS</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/placements">PLACEMENTS</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/industry-academia-innovation-practices">INDUSTRY - ACADEMIA INNOVATION
+                                                PRACTICES</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/iqac">IQAC</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/ipr-cell">IPR CELL</a>
+                                            <hr>
+                                            <a href="http://mite.ac.in/career-guidance-cell">CARREAR GUIDANCE CELL</a>
+                                        </div>
+                                        <a href="http://mite.ac.in/" title="">CONTACT</a>
+
+                                        <img src="http://mite.ac.in/sites/all/themes/hotec/images/logo2.png" class="menuimg2" />
+                                    </div>
+                                </div>
+
+                                <img src="college.png" alt="Girl in a jacket" width="100%" height="500">
+                                <div class="div1">
+                                    <h2 class="block-title">GET IN TOUCH</h2>
+                                    <ul style="color:white;">
+                                        <li style="padding:10px ;"><b>Mangalore Institute of Technology &amp; Engineering</b>
+                                            <br />
+                                            Badaga Mijar, Near                     <br />
+                                            Moodabidre, Mangalore Tq, DK 
+                                            <br />
+                                            Dist, Karnataka - 574225
+                                        </li>
+                                        <li style="padding:10px ;">
+                                            Call Us: <span>+91 8258 262695/ 96/ 97</span>   
+                                        </li>
+                                        <li style="padding:10px ;">
+                                            <a href="mailto:info@mite.ac.in">info@mite.ac.in</a>           
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                                <div class="div2"><p style="padding:40px;font-size:small;color:whitesmoke ;">© MITE  | POWERED BY NiTH</p></div>
+
+                    </body>
 
 </html>
