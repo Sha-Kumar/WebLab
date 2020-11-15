@@ -6,6 +6,10 @@
 
 This a repository consists of different WEB user-interface designs.
 
+# Usage
+
+To run the UI's first clone the repo and copy paste the path in the browser.
+
 # Feedback
 
 - If you think WebLab is useful, consider giving it a star.
