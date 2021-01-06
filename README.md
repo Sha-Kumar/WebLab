@@ -4,7 +4,11 @@
 
 # WebLab
 
-This a repository consists of different WEB user-interface designs.
+This a repository consists of different WEB user-interface designs. And also the lab programs in the web lab.
+
+# Usage
+
+To run the UI's first clone the repo and copy paste the path in the browser.
 
 # Feedback
 
