@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB-1 ==> Simple Calculator Program</title>
+
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        table,
+        td,
+        th {
+            height: 80%;
+            background-color: red;
+            text-align: center;
+            border-spacing: 5px;
+            border: 3px solid greenyellow;
+            font-size: 21px;
+            padding: 5px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+        }
+
+        td {
+            padding: 15px;
+            height: 20px;
+        }
+
+        button {
+            color: black;
+            font-size: 21px;
+            background-color: aqua;
+            padding: 5px;
+        }
+
+        input {
+            font-size: 21px;
+            background-color: blue;
+            color: whitesmoke;
+            padding: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <form>
+        <table>
+
+            <tr>
+                <th colspan="4" style="padding: 5px;font-size: 27px;">Simple - Calculator</th>
+            </tr>
+
+            <tr>
+                <td>Value - 1</td>
+                <td><input type="text" id="num1" required /></td>
+                <td>Value - 2</td>
+                <td><input type="text" id="num2" required /></td>
+            </tr>
+            <tr>
+                <td> <button onclick="calc(event,'+')">Addition</button></td>
+                <td> <button onclick="calc(event,'-')">Subtraction</button></td>
+                <td> <button onclick="calc(event,'*')">Multiplication</button></td>
+                <td> <button onclick="calc(event,'/')">Division</button></td>
+            </tr>
+
+            <tr>
+                <td>Result</td>
+                <td><input type="text" id="res" /></td>
+                <td colspan="2"><input type="reset" value="Clear All" style="font-size: 21px;
+                    background-color: aqua;
+                    color: black;" /></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
+
+<script>
+
+    function calc(e, ch) {
+
+        e.preventDefault();
+
+
+        var num1, num2;
+        num1 = parseInt(document.getElementById('num1').value)
+        num2 = parseInt(document.getElementById('num2').value)
+
+        if (isNaN(num1) || isNaN(num2)) {
+            alert("Please Enter Numbers");
+            return;
+
+        }
+
+
+
+
+
+        var msg = "";
+
+        switch (ch) {
+            case '+': msg = (num1 + num2);
+                break;
+
+            case '-': msg = (num1 - num2);
+                break;
+
+            case '*': msg = (num1 * num2);
+                break;
+
+            case '/':
+                if (num2 == 0)
+                    msg = ("Division not possible");
+                else
+                    msg = (num1 / num2)
+                break;
+
+            default: msg = ("Invalid Choice");
+        }
+
+
+        document.getElementById("res").value = msg
+    }
+
+</script>
