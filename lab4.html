@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Program - 3</title>
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><u>LAB - PROGRAM : Illustrating the prompt in JavaScript</u></h1>
+    <script type="text/javascript">
+        while (true) {
+            var str = prompt("Enter the Input [press 0 to exit]", "");
+            if (str === '0') {
+                break;
+            }
+            else if (!(isNaN(str))) {
+                var num, rev = 0, remainder;
+                num = parseInt(str);
+                while (num != 0) {
+                    remainder = num % 10;
+                    num = parseInt(num / 10);
+                    rev = rev * 10 + remainder;
+                }
+                alert("Reverse of " + str + " is " + rev);
+            }
+            else {
+                str = str.toUpperCase();
+                for (var i = 0; i < str.length; i++) {
+                    var chr = str.charAt(i);
+                    if (chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U') break;
+                }
+                if (i < str.length)
+                    alert("The position of the left most vowel is " + (i + 1));
+                else
+                    alert("No vowel found in the entered string");
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>
