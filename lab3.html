@@ -5,12 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab Program - 3</title>
-    <link rel="stylesheet" href="lab3.css">
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            padding-top: 180px;
+        }
+    </style>
 </head>
 
 <body>
     <h1><u>LAB - PROGRAM : Illustarting the Text-Growing & Text-Shrinking </u></h1>
-
+    <p id="demo"></p>
+    <script>
+        var var1 = setInterval(inTimer, 180);
+        var fs = 20;
+        var ids = document.getElementById("demo");
+        function inTimer() {
+            ids.innerHTML = 'TEXT GROWING';
+            ids.setAttribute('style', "font-size: " + fs + "px; color:red"); fs += 5;
+            if (fs >= 85) {
+                clearInterval(var1);
+                var2 = setInterval(deTimer, 180);
+            }
+        }
+        function deTimer() {
+            fs -= 5;
+            ids.innerHTML = 'TEXT SHRINKING';
+            ids.setAttribute('style', "font-size: " + fs + "px; color:blue");
+            if (fs === 20) {
+                clearInterval(var2);
+                var1 = setInterval(inTimer, 180);
+            }
+        }
+    </script>
 </body>
 
 </html>
