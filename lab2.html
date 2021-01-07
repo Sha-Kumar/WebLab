@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB PROGRAM - 2</title>
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        table,
+        td,
+        th {
+            height: 80%;
+            background-color: red;
+            text-align: center;
+            border-spacing: 5px;
+            border: 3px solid greenyellow;
+            font-size: 21px;
+            padding: 5px;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            height: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><u>LAB - PROGRAM : Table with Squares and Cubes of First TEN Numbers</u></h1>
+    <script>
+        document.write("<form><table>");
+        document.write("<th colspan = '3'>NUMBERS from 0-10 and its Squares & Cubes</th>");
+        document.write("<tr><td><b>Number</b></td><td><b>Square</b></td><td><b>Cube</b?</td></tr>");
+        for (var i = 0; i <= 10; i++) {
+            document.write("<tr><td>" + i + "</td><td>" + (i * i) + "</td><td>" + (i * i * i) + "</td></tr>");
+        }
+        document.write("</table></form>");
+    </script>
+</body>
+
+</html>
