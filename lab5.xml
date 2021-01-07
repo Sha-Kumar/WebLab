@@ -1,0 +1,39 @@
+<?xml-stylesheet type="text/css" href="lab5.css" ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<h1>Lab Program - 5 : Student Description</h1>
+<students>
+
+<student>
+<usn>1) USN: 4MT17CS098</usn>
+<name>NAME: Shashank Kumar</name>
+<college>COLLEGE: MITE</college>
+<branch>BRANCH: Computer Science and Engineering</branch>
+<year>YEAR: 2017</year>
+<email>E-mail: shashank123@gmail.com</email>
+</student>
+
+<student>
+<usn>2) USN: 4MT17ME095</usn>
+<name>NAME: Bharath Kumar</name>
+<college>COLLEGE: MITE</college>
+<branch>BRANCH: Mechanical Engineering</branch>
+<year>YEAR: 2017</year>
+<email>E-mail: bharath5167@gmail.com</email>
+</student>
+
+<student>
+<usn>3) USN: 4MT17IS064</usn>
+<name>NAME: Arun Kumar</name>
+<college>COLLEGE: MITE</college>
+<branch>BRANCH: Information Science and Engineering</branch>
+<year>YEAR: 2017</year>
+<email>E-mail: arunkm145@gmail.com</email>
+</student>
+
+</students>
+</body>
+</html>
