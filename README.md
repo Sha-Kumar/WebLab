@@ -4,7 +4,7 @@
 
 # WebLab
 
-This a repository consists of different WEB user-interface designs. And also the 11 lab programs in the web lab.
+This a repository consists of different WEB user-interface designs. And also the 11 lab programs in the web lab of 7th semester CSE branch.
 
 # Usage
 
